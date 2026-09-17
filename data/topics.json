@@ -1,0 +1,718 @@
+[
+  {
+    "id": "1",
+    "title": "ЗАГАЛЬНІ ПОЛОЖЕННЯ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 79,
+    "has_images_count": 23
+  },
+  {
+    "id": "2",
+    "title": "ОБОВ'ЯЗКИ І ПРАВА ВОДІЇВ МЕХАНІЧНИХ ТРАНСПОРТНИХ ЗАСОБІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 37,
+    "has_images_count": 11
+  },
+  {
+    "id": "3",
+    "title": "РУХ ТРАНСПОРТНИХ ЗАСОБІВ ІЗ СПЕЦІАЛЬНИМИ СИГНАЛАМИ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 16,
+    "has_images_count": 9
+  },
+  {
+    "id": "4",
+    "title": "ОБОВ'ЯЗКИ І ПРАВА ПІШОХОДІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 26,
+    "has_images_count": 6
+  },
+  {
+    "id": "5",
+    "title": "ОБОВ'ЯЗКИ І ПРАВА ПАСАЖИРІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 16,
+    "has_images_count": 0
+  },
+  {
+    "id": "6",
+    "title": "ВИМОГИ ДО ВЕЛОСИПЕДИСТІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 22,
+    "has_images_count": 8
+  },
+  {
+    "id": "7",
+    "title": "ВИМОГИ ДО ОСІБ, ЯКІ КЕРУЮТЬ ГУЖОВИМ ТРАНСПОРТОМ, І ПОГОНИЧІВ ТВАРИН",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 8,
+    "has_images_count": 1
+  },
+  {
+    "id": "8.1",
+    "title": "РЕГУЛЮВАННЯ ДОРОЖНЬОГО РУХУ (РЕГУЛЬОВАНІ ПЕРЕХРЕСТЯ)",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 84,
+    "has_images_count": 55
+  },
+  {
+    "id": "8.2",
+    "title": "РЕГУЛЮВАННЯ ДОРОЖНЬОГО РУХУ (НЕРЕГУЛЬОВАНІ ПЕРЕХРЕСТЯ)",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 7,
+    "has_images_count": 3
+  },
+  {
+    "id": "9",
+    "title": "ПОПЕРЕДЖУВАЛЬНІ СИГНАЛИ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 60,
+    "has_images_count": 9
+  },
+  {
+    "id": "10",
+    "title": "ПОЧАТОК РУХУ ТА ЗМІНА ЙОГО НАПРЯМКУ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 76,
+    "has_images_count": 32
+  },
+  {
+    "id": "11",
+    "title": "РОЗТАШУВАННЯ ТРАНСПОРТНИХ ЗАСОБІВ НА ДОРОЗІ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 39,
+    "has_images_count": 15
+  },
+  {
+    "id": "12",
+    "title": "ШВИДКІСТЬ РУХУ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 41,
+    "has_images_count": 20
+  },
+  {
+    "id": "13",
+    "title": "ДИСТАНЦІЯ, ІНТЕРВАЛ, ЗУСТРІЧНИЙ РОЗ'ЇЗД",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 13,
+    "has_images_count": 8
+  },
+  {
+    "id": "14",
+    "title": "ОБГІН",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 56,
+    "has_images_count": 39
+  },
+  {
+    "id": "15",
+    "title": "ЗУПИНКА І СТОЯНКА",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 97,
+    "has_images_count": 62
+  },
+  {
+    "id": "16.1",
+    "title": "ПРОЇЗД ПЕРЕХРЕСТЬ (РЕГУЛЬОВАНІ ПЕРЕХРЕСТЯ)",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 34,
+    "has_images_count": 28
+  },
+  {
+    "id": "16.2",
+    "title": "ПРОЇЗД ПЕРЕХРЕСТЬ (НЕРЕГУЛЬОВАНІ ПЕРЕХРЕСТЯ)",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 109,
+    "has_images_count": 105
+  },
+  {
+    "id": "17",
+    "title": "ПЕРЕВАГИ МАРШРУТНИХ ТРАНСПОРТНИХ ЗАСОБІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 11,
+    "has_images_count": 8
+  },
+  {
+    "id": "18",
+    "title": "ПРОЇЗД ПІШОХІДНИХ ПЕРЕХОДІВ І ЗУПИНОК ТРАНСПОРТНИХ ЗАСОБІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 19,
+    "has_images_count": 8
+  },
+  {
+    "id": "19",
+    "title": "КОРИСТУВАННЯ ЗОВНІШНІМИ СВІТЛОВИМИ ПРИЛАДАМИ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 33,
+    "has_images_count": 6
+  },
+  {
+    "id": "20",
+    "title": "РУХ ЧЕРЕЗ ЗАЛІЗНИЧНІ ПЕРЕЇЗДИ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 31,
+    "has_images_count": 10
+  },
+  {
+    "id": "21",
+    "title": "ПЕРЕВЕЗЕННЯ ПАСАЖИРІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 12,
+    "has_images_count": 5
+  },
+  {
+    "id": "22",
+    "title": "ПЕРЕВЕЗЕННЯ ВАНТАЖУ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 6,
+    "has_images_count": 0
+  },
+  {
+    "id": "23",
+    "title": "БУКСИРУВАННЯ ТА ЕКСПЛУАТАЦІЯ ТРАНСПОРТНИХ СОСТАВІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 20,
+    "has_images_count": 1
+  },
+  {
+    "id": "24",
+    "title": "НАВЧАЛЬНА ЇЗДА",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 14,
+    "has_images_count": 5
+  },
+  {
+    "id": "25",
+    "title": "РУХ ТРАНСПОРТНИХ ЗАСОБІВ У КОЛОНАХ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 8,
+    "has_images_count": 0
+  },
+  {
+    "id": "26",
+    "title": "РУХ У ЖИТЛОВІЙ ТА ПІШОХІДНІЙ ЗОНІ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 13,
+    "has_images_count": 6
+  },
+  {
+    "id": "27",
+    "title": "РУХ ПО АВТОМАГІСТРАЛЯХ І ДОРОГАХ ДЛЯ АВТОМОБІЛІВ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 13,
+    "has_images_count": 5
+  },
+  {
+    "id": "28",
+    "title": "РУХ ПО ГІРСЬКИХ ДОРОГАХ І НА КРУТИХ СПУСКАХ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 8,
+    "has_images_count": 1
+  },
+  {
+    "id": "29",
+    "title": "МІЖНАРОДНИЙ РУХ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 1,
+    "has_images_count": 0
+  },
+  {
+    "id": "30",
+    "title": "НОМЕРНІ, РОЗПІЗНАВАЛЬНІ ЗНАКИ, НАПИСИ І ПОЗНАЧЕННЯ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 14,
+    "has_images_count": 10
+  },
+  {
+    "id": "31",
+    "title": "ТЕХНІЧНИЙ СТАН ТРАНСПОРТНИХ ЗАСОБІВ ТА ЇХ ОБЛАДНАННЯ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 18,
+    "has_images_count": 1
+  },
+  {
+    "id": "32",
+    "title": "ОКРЕМІ ПИТАННЯ ДОРОЖНЬОГО РУХУ, ЩО ПОТРЕБУЮТЬ УЗГОДЖЕННЯ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 5,
+    "has_images_count": 0
+  },
+  {
+    "id": "33",
+    "title": "ДОРОЖНІ ЗНАКИ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 357,
+    "has_images_count": 351
+  },
+  {
+    "id": "34",
+    "title": "ДОРОЖНЯ РОЗМІТКА",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 35,
+    "has_images_count": 32
+  },
+  {
+    "id": "35",
+    "title": "ОСНОВИ БЕЗПЕЧНОГО ВОДІННЯ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 171,
+    "has_images_count": 102
+  },
+  {
+    "id": "36",
+    "title": "ОСНОВИ ПРАВА В ОБЛАСТІ ДОРОЖНЬОГО РУХУ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 8,
+    "has_images_count": 0
+  },
+  {
+    "id": "37",
+    "title": "НАДАННЯ ДОМЕДИЧНОЇ ДОПОМОГИ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 60,
+    "has_images_count": 1
+  },
+  {
+    "id": "38",
+    "title": "ЕТИКА ВОДІННЯ, КУЛЬТУРА ТА ВІДПОЧИНОК ВОДІЯ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 14,
+    "has_images_count": 3
+  },
+  {
+    "id": "39",
+    "title": "ЄВРОПРОТОКОЛ",
+    "categories": [
+      "B",
+      "A",
+      "C",
+      "D"
+    ],
+    "count": 6,
+    "has_images_count": 0
+  },
+  {
+    "id": "40",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ А1, А (ЗАГАЛЬНІ)",
+    "categories": [
+      "A"
+    ],
+    "count": 31,
+    "has_images_count": 11
+  },
+  {
+    "id": "41",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ А1, А (БУДОВА І ТЕРМІНИ)",
+    "categories": [
+      "A"
+    ],
+    "count": 13,
+    "has_images_count": 2
+  },
+  {
+    "id": "42",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ А1, А (ЮРИДИЧНА ВІДПОВІДАЛЬНІСТЬ)",
+    "categories": [
+      "A"
+    ],
+    "count": 20,
+    "has_images_count": 3
+  },
+  {
+    "id": "43",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ А1, А (БЕЗПЕКА)",
+    "categories": [
+      "A"
+    ],
+    "count": 34,
+    "has_images_count": 1
+  },
+  {
+    "id": "44",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ В1, В (ЗАГАЛЬНІ)",
+    "categories": [
+      "B"
+    ],
+    "count": 16,
+    "has_images_count": 2
+  },
+  {
+    "id": "45",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ В1, В (БУДОВА І ТЕРМІНИ)",
+    "categories": [
+      "B"
+    ],
+    "count": 33,
+    "has_images_count": 20
+  },
+  {
+    "id": "46",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ В1, В (ЮРИДИЧНА ВІДПОВІДАЛЬНІСТЬ)",
+    "categories": [
+      "B"
+    ],
+    "count": 9,
+    "has_images_count": 0
+  },
+  {
+    "id": "47",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ В1, В (БЕЗПЕКА)",
+    "categories": [
+      "B"
+    ],
+    "count": 7,
+    "has_images_count": 0
+  },
+  {
+    "id": "48",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ C1, C (ЗАГАЛЬНІ)",
+    "categories": [
+      "C"
+    ],
+    "count": 88,
+    "has_images_count": 50
+  },
+  {
+    "id": "49",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ C1, C (БУДОВА І ТЕРМІНИ)",
+    "categories": [
+      "C"
+    ],
+    "count": 55,
+    "has_images_count": 1
+  },
+  {
+    "id": "50",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ C1, C (ЮРИДИЧНА ВІДПОВІДАЛЬНІСТЬ)",
+    "categories": [
+      "C"
+    ],
+    "count": 12,
+    "has_images_count": 0
+  },
+  {
+    "id": "51",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ C1, C (БЕЗПЕКА)",
+    "categories": [
+      "C"
+    ],
+    "count": 43,
+    "has_images_count": 1
+  },
+  {
+    "id": "52",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ D1, D (ЗАГАЛЬНІ)",
+    "categories": [
+      "D"
+    ],
+    "count": 66,
+    "has_images_count": 17
+  },
+  {
+    "id": "53",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ D1, D (БУДОВА І ТЕРМІНИ)",
+    "categories": [
+      "D"
+    ],
+    "count": 45,
+    "has_images_count": 1
+  },
+  {
+    "id": "54",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ D1, D (ЮРИДИЧНА ВІДПОВІДАЛЬНІСТЬ)",
+    "categories": [
+      "D"
+    ],
+    "count": 36,
+    "has_images_count": 0
+  },
+  {
+    "id": "55",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ D1, D (БЕЗПЕКА)",
+    "categories": [
+      "D"
+    ],
+    "count": 30,
+    "has_images_count": 3
+  },
+  {
+    "id": "56",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ BE, C1E, CE, D1E, DE (ЗАГАЛЬНІ)",
+    "categories": [
+      "BE",
+      "CE",
+      "DE"
+    ],
+    "count": 21,
+    "has_images_count": 12
+  },
+  {
+    "id": "57",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ BE, C1E, CE, D1E, DE (БУДОВА І ТЕРМІНИ)",
+    "categories": [
+      "BE",
+      "CE",
+      "DE"
+    ],
+    "count": 5,
+    "has_images_count": 1
+  },
+  {
+    "id": "58",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ BE, C1E, CE, D1E, DE (ЮРИДИЧНА ВІДПОВІДАЛЬНІСТЬ)",
+    "categories": [
+      "BE",
+      "CE",
+      "DE"
+    ],
+    "count": 3,
+    "has_images_count": 0
+  },
+  {
+    "id": "59",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЙ BE, C1E, CE, D1E, DE (БЕЗПЕКА)",
+    "categories": [
+      "BE",
+      "CE",
+      "DE"
+    ],
+    "count": 15,
+    "has_images_count": 0
+  },
+  {
+    "id": "60",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЇ T (ЗАГАЛЬНІ)",
+    "categories": [
+      "T"
+    ],
+    "count": 18,
+    "has_images_count": 5
+  },
+  {
+    "id": "61",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЇ Т (БУДОВА І ТЕРМІНИ)",
+    "categories": [
+      "T"
+    ],
+    "count": 7,
+    "has_images_count": 0
+  },
+  {
+    "id": "62",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЇ Т (ЮРИДИЧНА ВІДПОВІДАЛЬНІСТЬ)",
+    "categories": [
+      "T"
+    ],
+    "count": 16,
+    "has_images_count": 0
+  },
+  {
+    "id": "63",
+    "title": "ДОДАТКОВІ ПИТАННЯ ЩОДО КАТЕГОРІЇ Т (БЕЗПЕКА)",
+    "categories": [
+      "T"
+    ],
+    "count": 12,
+    "has_images_count": 0
+  }
+]
