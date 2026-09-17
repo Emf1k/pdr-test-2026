@@ -1,4 +1,4 @@
-// GREEN-WAY PDR ONLINE 2026
+// EASYWAY PDR ONLINE 2026
 (function () {
   'use strict';
 
