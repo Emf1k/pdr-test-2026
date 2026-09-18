@@ -1058,7 +1058,7 @@ body {
   gap: 0.85rem;
   padding: 1rem 1.15rem;
   background: var(--bg-surface);
-  border: 1.5px solid var(--border-color);
+  border: 1.5px solid #d1d5db;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: var(--transition);
@@ -1077,8 +1077,8 @@ body {
   min-width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--bg-muted);
-  color: var(--text-secondary);
+  background: #e5e7eb;
+  color: #4b5563;
   display: flex;
   align-items: center;
   justify-content: center;
