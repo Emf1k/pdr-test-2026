@@ -61,6 +61,10 @@
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           <span>Обрані <span class="badge-count count-favorites" style="display:none">0</span></span>
         </button>
+        <button class="nav-btn" data-view="cabinet" id="nav-cabinet-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Кабінет</span>
+        </button>
       </nav>
 
       <!-- Header actions: Category, Theme, Sound -->
@@ -272,6 +276,120 @@
       <div id="favorites-ready-state" style="display:none">
         <div class="favorites-questions-list" id="favorites-list">
           <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CABINET / PROFILE VIEW -->
+    <section id="view-cabinet" class="view-panel">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2>👤 Особистий кабінет</h2>
+          <p class="panel-subtitle">Ваша статистика, історія іспитів та прогрес вивчення</p>
+        </div>
+      </div>
+
+      <!-- Stats Cards Row -->
+      <div class="cab-stats-row">
+        <div class="cab-stat-card">
+          <div class="cab-stat-icon">📝</div>
+          <div class="cab-stat-value" id="cab-total-answered">0</div>
+          <div class="cab-stat-label">Відповідей дано</div>
+        </div>
+        <div class="cab-stat-card">
+          <div class="cab-stat-icon">✅</div>
+          <div class="cab-stat-value" id="cab-correct-count">0</div>
+          <div class="cab-stat-label">Правильних</div>
+        </div>
+        <div class="cab-stat-card">
+          <div class="cab-stat-icon">🎯</div>
+          <div class="cab-stat-value" id="cab-accuracy">0%</div>
+          <div class="cab-stat-label">Точність</div>
+        </div>
+        <div class="cab-stat-card">
+          <div class="cab-stat-icon">🏆</div>
+          <div class="cab-stat-value" id="cab-exams-passed">0</div>
+          <div class="cab-stat-label">Іспитів складено</div>
+        </div>
+        <div class="cab-stat-card">
+          <div class="cab-stat-icon">❌</div>
+          <div class="cab-stat-value" id="cab-exams-failed">0</div>
+          <div class="cab-stat-label">Іспитів не складено</div>
+        </div>
+        <div class="cab-stat-card">
+          <div class="cab-stat-icon">⭐</div>
+          <div class="cab-stat-value" id="cab-favorites-count">0</div>
+          <div class="cab-stat-label">В обраному</div>
+        </div>
+      </div>
+
+      <!-- Overall Progress Bar -->
+      <div class="cab-section">
+        <h3>📊 Загальний прогрес вивчення бази</h3>
+        <div class="cab-overall-progress">
+          <div class="cab-overall-progress-bar">
+            <div class="cab-overall-progress-fill" id="cab-overall-fill" style="width: 0%"></div>
+          </div>
+          <div class="cab-overall-progress-text">
+            <span id="cab-overall-text">0 / 2332 питань пройдено</span>
+            <span id="cab-overall-percent">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exam History -->
+      <div class="cab-section">
+        <h3>📋 Історія іспитів</h3>
+        <div id="cab-exam-history-empty" class="empty-state" style="display:none;">
+          <div class="empty-icon">📄</div>
+          <h3>Ви ще не складали іспитів</h3>
+          <p>Після проходження іспиту «як в ТСЦ» результати з'являться тут.</p>
+        </div>
+        <div class="cab-table-wrapper" id="cab-exam-history-table-wrapper" style="display:none;">
+          <table class="cab-table">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Дата і час</th>
+                <th>Категорія</th>
+                <th>Результат</th>
+                <th>Правильних</th>
+                <th>Помилок</th>
+                <th>Час</th>
+              </tr>
+            </thead>
+            <tbody id="cab-exam-history-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Topic Progress -->
+      <div class="cab-section">
+        <h3>📚 Прогрес за розділами ПДР</h3>
+        <div class="cab-topics-progress" id="cab-topics-progress">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Activity Timeline -->
+      <div class="cab-section">
+        <h3>📅 Остання активність</h3>
+        <div class="cab-activity-list" id="cab-activity-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Data Management -->
+      <div class="cab-section cab-danger-zone">
+        <h3>⚙️ Керування даними</h3>
+        <p class="cab-danger-text">Ваші дані зберігаються локально у вашому браузері. Ви можете скинути прогрес або очистити окремі дані.</p>
+        <div class="cab-action-buttons">
+          <button class="btn btn-outline btn-sm" id="cab-btn-clear-history">🗑️ Очистити історію іспитів</button>
+          <button class="btn btn-outline btn-sm" id="cab-btn-clear-mistakes">🧹 Очистити помилки</button>
+          <button class="btn btn-outline btn-sm" id="cab-btn-clear-favorites">⭐ Очистити обрані</button>
+          <button class="btn btn-danger btn-sm" id="cab-btn-reset-all">🔄 Скинути весь прогрес</button>
         </div>
       </div>
     </section>

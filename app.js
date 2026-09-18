@@ -63,6 +63,7 @@
     setupTheme();
     setupSound();
     setupEventListeners();
+    setupCabinetListeners();
     try {
       const [topicsRes, questionsRes] = await Promise.all([
         fetch('data/topics.json').then(r => r.json()),
@@ -157,6 +158,8 @@
       renderAllTopics();
     } else if (viewId === 'tickets') {
       renderTickets();
+    } else if (viewId === 'cabinet') {
+      renderCabinetView();
     }
   }
 
@@ -706,6 +709,143 @@
     const favBtn = document.getElementById('q-favorite-btn');
     if (favBtn) favBtn.classList.toggle('active');
     updateActivePill();
+  }
+
+  /* ====== CABINET / PROFILE ====== */
+  function renderCabinetView() {
+    const progressKeys = Object.keys(state.progress);
+    const totalAnswered = progressKeys.length;
+    let correctCount = 0;
+    progressKeys.forEach(k => { if (state.progress[k].isCorrect) correctCount++; });
+    const accuracy = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+    const examsPassed = state.examHistory.filter(h => h.passed).length;
+    const examsFailed = state.examHistory.filter(h => !h.passed).length;
+
+    const el = id => document.getElementById(id);
+    el('cab-total-answered').textContent = totalAnswered;
+    el('cab-correct-count').textContent = correctCount;
+    el('cab-accuracy').textContent = accuracy + '%';
+    el('cab-exams-passed').textContent = examsPassed;
+    el('cab-exams-failed').textContent = examsFailed;
+    el('cab-favorites-count').textContent = state.favorites.length;
+
+    // Overall progress
+    const totalQ = state.questions.length;
+    const pct = totalQ > 0 ? Math.round((totalAnswered / totalQ) * 100) : 0;
+    el('cab-overall-fill').style.width = pct + '%';
+    el('cab-overall-text').textContent = totalAnswered + ' / ' + totalQ + ' питань пройдено';
+    el('cab-overall-percent').textContent = pct + '%';
+
+    // Exam history table
+    const emptyHist = el('cab-exam-history-empty');
+    const tableWrap = el('cab-exam-history-table-wrapper');
+    if (state.examHistory.length === 0) {
+      emptyHist.style.display = 'block';
+      tableWrap.style.display = 'none';
+    } else {
+      emptyHist.style.display = 'none';
+      tableWrap.style.display = 'block';
+      const tbody = el('cab-exam-history-body');
+      tbody.innerHTML = '';
+      const sorted = [...state.examHistory].reverse();
+      sorted.forEach((h, i) => {
+        const d = new Date(h.date);
+        const dateStr = d.toLocaleDateString('uk-UA', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        const timeStr = d.toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit' });
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td>' + (i + 1) + '</td>' +
+          '<td>' + dateStr + ' ' + timeStr + '</td>' +
+          '<td>' + (h.category || 'B') + '</td>' +
+          '<td><span class="cab-result-badge ' + (h.passed ? 'passed' : 'failed') + '">' + (h.passed ? 'Складено ✓' : 'Не складено ✗') + '</span></td>' +
+          '<td>' + h.correct + '/20</td>' +
+          '<td>' + h.mistakes + '</td>' +
+          '<td>' + (h.time || '—') + '</td>';
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Topic progress
+    const topicsContainer = el('cab-topics-progress');
+    topicsContainer.innerHTML = '';
+    state.topics.forEach(topic => {
+      const topicQs = state.questions.filter(q => q.section_id === topic.id);
+      let answered = 0;
+      topicQs.forEach(q => { if (state.progress[q.id]) answered++; });
+      const p = topicQs.length > 0 ? Math.round((answered / topicQs.length) * 100) : 0;
+      const row = document.createElement('div');
+      row.className = 'cab-topic-row';
+      row.innerHTML = '<span class="cab-topic-num">' + topic.id + '</span>' +
+        '<span class="cab-topic-name">' + topic.title + '</span>' +
+        '<div class="cab-topic-bar-bg"><div class="cab-topic-bar-fill" style="width:' + p + '%"></div></div>' +
+        '<span class="cab-topic-pct' + (p === 100 ? ' complete' : '') + '">' + p + '%</span>';
+      topicsContainer.appendChild(row);
+    });
+
+    // Activity timeline (last 30 answered questions)
+    const actList = el('cab-activity-list');
+    actList.innerHTML = '';
+    const recent = progressKeys
+      .map(k => ({ id: k, ...state.progress[k] }))
+      .filter(a => a.timestamp)
+      .sort((a, b) => b.timestamp - a.timestamp)
+      .slice(0, 30);
+
+    if (recent.length === 0) {
+      actList.innerHTML = '<div class="empty-state" style="padding:1rem 0"><div class="empty-icon">📅</div><h3>Поки що немає активності</h3><p>Почніть проходити тести, і ваша активність з\'явиться тут.</p></div>';
+    } else {
+      recent.forEach(a => {
+        const q = state.questions.find(q => q.id === a.id);
+        const d = new Date(a.timestamp);
+        const timeStr = d.toLocaleDateString('uk-UA', { day: '2-digit', month: '2-digit' }) + ' ' + d.toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit' });
+        const item = document.createElement('div');
+        item.className = 'cab-activity-item';
+        item.innerHTML = '<div class="cab-activity-dot' + (a.isCorrect ? '' : ' wrong') + '"></div>' +
+          '<div class="cab-activity-time">' + timeStr + '</div>' +
+          '<div class="cab-activity-text">' + (q ? 'Розд. ' + q.section_id + ' №' + q.number + ': ' + (a.isCorrect ? '✅ правильно' : '❌ помилка') : a.id) + '</div>';
+        actList.appendChild(item);
+      });
+    }
+  }
+
+  function setupCabinetListeners() {
+    document.getElementById('cab-btn-clear-history')?.addEventListener('click', () => {
+      if (confirm('Очистити всю історію іспитів?')) {
+        state.examHistory = [];
+        localStorage.setItem('pdr_exam_history', '[]');
+        renderCabinetView();
+      }
+    });
+    document.getElementById('cab-btn-clear-mistakes')?.addEventListener('click', () => {
+      if (confirm('Очистити всі помилки?')) {
+        state.mistakes = [];
+        localStorage.setItem('pdr_mistakes', '[]');
+        updateBadgeCounts();
+        renderCabinetView();
+      }
+    });
+    document.getElementById('cab-btn-clear-favorites')?.addEventListener('click', () => {
+      if (confirm('Очистити всі обрані?')) {
+        state.favorites = [];
+        localStorage.setItem('pdr_favorites', '[]');
+        updateBadgeCounts();
+        renderCabinetView();
+      }
+    });
+    document.getElementById('cab-btn-reset-all')?.addEventListener('click', () => {
+      if (confirm('Увага! Це скине ВСЮ статистику, історію іспитів, помилки, обрані та прогрес. Ви впевнені?')) {
+        state.progress = {};
+        state.mistakes = [];
+        state.favorites = [];
+        state.examHistory = [];
+        localStorage.removeItem('pdr_progress');
+        localStorage.setItem('pdr_mistakes', '[]');
+        localStorage.setItem('pdr_favorites', '[]');
+        localStorage.setItem('pdr_exam_history', '[]');
+        updateBadgeCounts();
+        renderCabinetView();
+        alert('Весь прогрес скинуто.');
+      }
+    });
   }
 
   function setupEventListeners() {
