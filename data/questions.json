@@ -1120,7 +1120,7 @@
       "Ні."
     ],
     "correct_answer": 1,
-    "image": "images/q_1_56.jpeg",
+    "image": null,
     "categories": [
       "B",
       "A",
@@ -1636,7 +1636,7 @@
       "Відповіді 1 і 2."
     ],
     "correct_answer": 2,
-    "image": "images/q_2_3.jpeg",
+    "image": null,
     "categories": [
       "B",
       "A",
@@ -3963,7 +3963,7 @@
       "З лівого."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_7_3.jpeg",
     "categories": [
       "B",
       "A",
@@ -4003,7 +4003,7 @@
       "Відповіді 1 і 2."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_7_5.jpeg",
     "categories": [
       "B",
       "A",
@@ -4023,7 +4023,7 @@
       "Дозволено по дорогах без покриття."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_7_6.jpeg",
     "categories": [
       "B",
       "A",
@@ -4043,7 +4043,7 @@
       "Дозволено, якщо віз обладнаний світлоповертачами."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_7_7.jpeg",
     "categories": [
       "B",
       "A",
@@ -4065,7 +4065,7 @@
       "Відповіді 1, 2, 3 і 4."
     ],
     "correct_answer": 5,
-    "image": null,
+    "image": "images/q_7_8.jpeg",
     "categories": [
       "B",
       "A",
@@ -4184,7 +4184,7 @@
       "Не повинен."
     ],
     "correct_answer": 1,
-    "image": null,
+    "image": "images/q_8.1_6.jpeg",
     "categories": [
       "B",
       "A",
@@ -4556,7 +4556,7 @@
       "Нікому."
     ],
     "correct_answer": 4,
-    "image": null,
+    "image": "images/q_8.1_24.jpeg",
     "categories": [
       "B",
       "A",
@@ -4619,7 +4619,7 @@
       "Жовтому автомобілю."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_8.1_27.jpeg",
     "categories": [
       "B",
       "A",
@@ -12947,7 +12947,7 @@
       "Ближче 15 м."
     ],
     "correct_answer": 1,
-    "image": null,
+    "image": "images/q_15_63.jpeg",
     "categories": [
       "B",
       "A",
@@ -12966,7 +12966,7 @@
       "Заборонена."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_15_64.jpeg",
     "categories": [
       "B",
       "A",
@@ -12988,7 +12988,7 @@
       "Відповіді 2 і 3."
     ],
     "correct_answer": 5,
-    "image": null,
+    "image": "images/q_15_65.jpeg",
     "categories": [
       "B",
       "A",
@@ -13008,7 +13008,7 @@
       "Виконати дію з відповіді 1 або 2, а в установлених Правилами дорожнього руху випадках - й обидва дії одночасно."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_15_66.jpeg",
     "categories": [
       "B",
       "A",
@@ -13029,7 +13029,7 @@
       "Виконати стоянку на узбіччі, включивши тільки стоянкові ліхтарі."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_15_67.jpeg",
     "categories": [
       "B",
       "A",
@@ -13073,7 +13073,7 @@
       "Відповіді 1 і 2."
     ],
     "correct_answer": 5,
-    "image": null,
+    "image": "images/q_15_69.jpeg",
     "categories": [
       "B",
       "A",
@@ -13094,7 +13094,7 @@
       "Відповіді 2 і 3."
     ],
     "correct_answer": 4,
-    "image": null,
+    "image": "images/q_15_70.jpeg",
     "categories": [
       "B",
       "A",
@@ -13134,7 +13134,7 @@
       "Відповіді 1 і 2."
     ],
     "correct_answer": 1,
-    "image": null,
+    "image": "images/q_15_72.jpeg",
     "categories": [
       "B",
       "A",
@@ -13156,7 +13156,7 @@
       "Відповіді 1 і 2."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_15_73.jpeg",
     "categories": [
       "B",
       "A",
@@ -13216,7 +13216,7 @@
       "Якщо це не буде перешкоджати руху інших транспортних засобів."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_15_76.jpeg",
     "categories": [
       "B",
       "A",
@@ -45140,7 +45140,7 @@
       "Про те, що через габарити транспортного засобу сигналів світлофора може бути не видно іншим учасникам дорожнього руху."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_63_1.jpeg",
     "categories": [
       "T"
     ]
@@ -45158,7 +45158,7 @@
       "Виконати дії, перелічені в пунктах 2 і 3."
     ],
     "correct_answer": 4,
-    "image": null,
+    "image": "images/q_63_2.jpeg",
     "categories": [
       "T"
     ]
@@ -45193,7 +45193,7 @@
       "Заборонено."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_63_4.jpeg",
     "categories": [
       "T"
     ]
@@ -45210,7 +45210,7 @@
       "Заборонено."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_63_5.jpeg",
     "categories": [
       "T"
     ]
@@ -45227,7 +45227,7 @@
       "Не змінюється."
     ],
     "correct_answer": 2,
-    "image": null,
+    "image": "images/q_63_6.jpeg",
     "categories": [
       "T"
     ]
@@ -45261,7 +45261,7 @@
       "Обидві відповіді правильні."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_63_8.jpeg",
     "categories": [
       "T"
     ]
@@ -45312,7 +45312,7 @@
       "Усе перелічене вище."
     ],
     "correct_answer": 3,
-    "image": null,
+    "image": "images/q_63_11.jpeg",
     "categories": [
       "T"
     ]
